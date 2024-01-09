@@ -18,8 +18,7 @@ jobs:
         run: |
           aws --version
       - name : install terraform 
-        run: install terraform 
-      - uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v2
       - run: terraform version
       # Konfiguriere die AWS CLI
       - run: mkdir -p ~/.aws/
