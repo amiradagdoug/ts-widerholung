@@ -31,7 +31,7 @@ jobs:
       # Create terraform
 
       - run: terraform -chdir=terraform/ init -backend-config="bucket=${STATE_BUCKET}"
-        env: 
+        env:   
           STATE_BUCKET: ${{ secrets.TF_CONFIG }}
       - run: terraform -chdir=terraform/ plan
       - run: terraform -chdir=terraform/ apply -auto-approve
