@@ -17,7 +17,7 @@ jobs:
       - name: Check if aws cli is installed
         run: |
           aws --version
-      - uses: hashicorp/setup-terraform@v2
+      
       - run: terraform version
       # Konfiguriere die AWS CLI
       - run: mkdir -p ~/.aws/
