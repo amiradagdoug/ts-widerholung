@@ -9,6 +9,6 @@ terraform {
 }
 
 provider "aws" {
-  profile = "Student-153386709997"
+  profile = "techstarter"
   region  = "eu-central-1"
 }
